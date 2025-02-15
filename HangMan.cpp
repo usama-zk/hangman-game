@@ -18,7 +18,7 @@ string RandomWord(int random_number) {
 	string line;
 	string word;
 	//** Paste path here as shown
-	ifstream file("D:\\example\\example.txt");
+	ifstream file("D:\\example\\wordBank.txt");
 	while (getline(file, line))
 	{
 		if (random_number == counter)
@@ -42,15 +42,15 @@ int RandomNumber(int choice) {
 		There are 134 words with number of letters more than 9
 	*/
 	srand(time(NULL));
-	int random=0;
+	int random = 0;
 	if (choice == 1)
 		random = (rand() % (92 + 1 - 1)) + 1;
 
 	else if (choice == 2)
-		random = (rand() % (260 + 1 - 93)) + 93;
+		random = (rand() % (168 + 1 - 93)) + 93;
 
 	else if (choice == 3)
-		random = (rand() % (321 + 1 - 261)) + 261;
+		random = (rand() % (218 + 1 - 218)) + 169;
 
 	return random;
 }
@@ -169,10 +169,6 @@ void Hint(int random_number)
 	{
 		cout << "Hint:" << endl << "It is a Animal";
 	}
-	else if (random_number > 218 && random_number <= 229)
-	{
-		cout << "Hint:" << endl << "A Famous Personality";
-	}
 	cout << endl;
 }
 
@@ -290,4 +286,3 @@ int main() {
 	}
 	return 0;
 }
-
