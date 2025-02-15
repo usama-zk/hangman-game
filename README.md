@@ -31,3 +31,6 @@ Three Difficulty Levels:
 
 **Win or Lose:** You win if you guess the word correctly before running out of lives. You lose if you run out of lives before guessing the word.
 
+![alt text](image-2.png)
+![alt text](image-3.png)
+

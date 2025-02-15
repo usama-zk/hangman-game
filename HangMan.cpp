@@ -18,7 +18,7 @@ string RandomWord(int random_number) {
 	string line;
 	string word;
 	//** Paste path here as shown
-	ifstream file("D:\\example\\wordBank.txt");
+	ifstream file("D:\\examples\\wordBank.txt");
 	while (getline(file, line))
 	{
 		if (random_number == counter)
